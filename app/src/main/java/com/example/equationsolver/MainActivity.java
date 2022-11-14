@@ -69,15 +69,15 @@ public class MainActivity extends AppCompatActivity {
         String Texta = Edita.getText().toString();
         String Textb = Editb.getText().toString();
         String Textc = Editc.getText().toString();
-        if (Texta.isEmpty() || Textb.isEmpty() || Textc.isEmpty()) {
-            Toast.makeText(this, "Не все аргументы введены", Toast.LENGTH_SHORT).show();
-            if (Texta.isEmpty()) {
+        if (Texta.isEmpty() || Textb.isEmpty() || Textc.isEmpty() || Texta.equals("-") || Textb.equals("-") || Textc.equals("-")) {
+            Toast.makeText(this, "Некорректный ввод", Toast.LENGTH_SHORT).show();
+            if (Texta.isEmpty() || Texta.equals("-")) {
                 Edita.setBackgroundColor(Color.parseColor("#CF1616"));
             }
-            if (Textb.isEmpty()) {
+            if (Textb.isEmpty() || Textb.equals("-")) {
                 Editb.setBackgroundColor(Color.parseColor("#CF1616"));
             }
-            if (Textc.isEmpty()) {
+            if (Textc.isEmpty()|| Textc.equals("-")) {
                 Editc.setBackgroundColor(Color.parseColor("#CF1616"));
             }
         }
