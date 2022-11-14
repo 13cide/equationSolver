@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/day_background"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    app:layout_dodgeInsetEdges="none"
+    tools:context=".MainActivity"
+    android:id="@+id/lay">
+
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
+
+          <Switch
+              android:id="@+id/switcher"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:onClick="mode"
+              android:text="🌞"
+              android:textAlignment="textEnd"
+              android:textSize="30sp"
+              tools:ignore="OnClick,UseSwitchCompatOrMaterialXml" />
+
+     </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center_horizontal"
+         app:layout_dodgeInsetEdges="none"
+         tools:context=".MainActivity">
+
+
+          <EditText
+              android:id="@+id/textA"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:hint="a"
+              android:inputType="numberSigned|numberDecimal"
+              android:maxWidth="200dp"
+              android:minWidth="30dp"
+              android:textAlignment="viewEnd"
+              android:textSize="34sp"
+              android:textStyle="bold|italic"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="x^2 +"
+              android:textAlignment="center"
+              android:textAllCaps="false"
+              android:textSize="34sp"
+              android:textStyle="bold" />
+
+          <EditText
+              android:id="@+id/textB"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:hint="b"
+              android:inputType="numberSigned|numberDecimal"
+              android:maxWidth="200dp"
+              android:minWidth="30dp"
+              android:textAlignment="viewEnd"
+              android:textSize="34sp"
+              android:textStyle="bold|italic" />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="x + "
+              android:textSize="34sp"
+              android:textStyle="bold" />
+
+          <EditText
+              android:id="@+id/textC"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:hint="c"
+              android:inputType="numberSigned|numberDecimal"
+              android:maxWidth="200dp"
+              android:minWidth="30dp"
+              android:textAlignment="center"
+              android:textSize="34sp"
+              android:textStyle="bold|italic" />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:maxWidth="200dp"
+              android:minWidth="30dp"
+              android:text="= 0"
+              android:textAlignment="textStart"
+              android:textSize="34sp"
+              android:textStyle="bold" />
+
+     </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center_horizontal"
+         app:layout_dodgeInsetEdges="none">
+
+          <TextView
+              android:id="@+id/x1"
+              android:layout_width="0dp"
+              android:layout_height="65dp"
+              android:layout_weight="1"
+              android:maxWidth="300dp"
+              android:minWidth="200dp"
+              android:text="x1 ="
+              android:textAlignment="center"
+              android:textSize="34sp" />
+     </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="60dp"
+         android:gravity="center_horizontal"
+         app:layout_dodgeInsetEdges="none">
+
+          <TextView
+              android:id="@+id/x2"
+              android:layout_width="0dp"
+              android:layout_height="60dp"
+              android:layout_weight="1"
+              android:maxWidth="300dp"
+              android:minWidth="200dp"
+              android:text="x2 ="
+              android:textAlignment="center"
+              android:textSize="34sp" />
+     </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center_horizontal"
+         app:layout_dodgeInsetEdges="none">
+
+
+          <Button
+              android:id="@+id/button"
+              android:layout_width="400dp"
+              android:layout_height="65dp"
+              android:layout_marginTop="10sp"
+              android:onClick="click"
+              android:text="Решить!"
+              android:textColor="#AE05250F"
+              android:textSize="34sp"
+              app:cornerRadius="20sp"
+              android:backgroundTint="#67CD1F"/>
+     </LinearLayout>
+
+</LinearLayout>
+
+
+
