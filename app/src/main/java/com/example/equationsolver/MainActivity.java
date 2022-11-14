@@ -6,6 +6,7 @@ import android.annotation.SuppressLint;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.text.Layout;
 import android.view.View;
@@ -45,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         button = findViewById(R.id.button);
         layout = findViewById(R.id.lay);
     }
+
 
     public void mode(View view) {
         if (switcher.isChecked()) {
@@ -88,6 +90,7 @@ public class MainActivity extends AppCompatActivity {
             if (a == 0) {
                 if (b == 0) {
                     if (c == 0) {
+                        MediaPlayer.create(this, R.raw.crng).start();
                         x1.setText("Ты что, тупой? Все коэфиценты по 0? Правда непонятно, какой результат?");
                         x2.setText("x - любое число, идиот");
                     }
